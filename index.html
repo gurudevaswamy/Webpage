@@ -6,16 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Album</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function checkPin() {
-            const pin = prompt("Please enter the access PIN:");
-            if (pin !== "199008") { // Replace "1234" with your chosen PIN
-                alert("Incorrect PIN. Access denied.");
-                window.location.href = "error.html"; // Redirect if incorrect
-            }
-        }
-    </script>
-</head>
+    </head>
 <body onload="checkPin()">
     <header>
         <h1>Photo Album</h1>
@@ -25,7 +16,6 @@
     <section class="gallery">
         <div class="photo"><img src="images/photo1.jpg" alt="Family Photo 1"></div>
         <div class="photo"><img src="images/photo2.jpg" alt="Family Photo 2"></div>
-        <div class="photo"><img src="images/photo3.jpg" alt="Family Photo 3"></div>
         <!-- Add more photos as needed -->
     </section>
 </body>
